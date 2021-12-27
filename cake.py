@@ -31,7 +31,7 @@ for ordinal_of_columns in transform:
     column_name = df.columns[ordinal_of_columns]
     # replace each options name to new value
     for option_name in transform[ordinal_of_columns]:
-        df[column_name].replace(to_replace=option_name, replace=transform[ordinal_of_columns][option_name], inplace=True)
+        df[column_name].replace(to_replace=option_name, value=transform[ordinal_of_columns][option_name], inplace=True)
 
 
 # if want to change column names
